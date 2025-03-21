@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="icon" href="../images/title1.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-in {
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out forwards;
+      }
+      .fade-in:nth-child(1) {
+        animation-delay: 0.3s;
+      }
+      .fade-in:nth-child(2) {
+        animation-delay: 0.6s;
+      }
+      .fade-in:nth-child(3) {
+        animation-delay: 0.9s;
+      }
+      .fade-in:nth-child(4) {
+        animation-delay: 1.2s;
+      }
+      .fade-in:nth-child(5) {
+        animation-delay: 1.5s;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 fade-in">
+    <!-- navbar -->
+    <div id="navbar" class="fade-in"></div>
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+
+    <!-- My Journey in IT Field and Experiences     -->
+    <header class="w-full bg-gray-50 py-16 text-center p-6 fade-in">
+      <h1 class="text-4xl md:text-5xl font-bold text-black">
+        My Journey in IT Field and Experiences
+      </h1>
+      <p class="text-lg md:text-xl text-gray-600 mt-4">
+        The language I studied and What I have went through
+      </p>
+    </header>
+    <!-- Journey starting from 2020 -->
+    <ol
+      class="relative border-l border-gray-300 dark:border-gray-700 p-6 max-w-4xl mx-auto fade-in"
+    >
+      <li class="mb-10 ms-4">
+        <div
+          class="absolute w-3 h-3 bg-gray-300 dark:bg-gray-600 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900"
+        ></div>
+        <time class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400"
+          >March 2020</time
+        >
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+          Discovering My Passion for IT
+        </h3>
+        <p class="mb-4 text-base text-gray-600 dark:text-gray-400">
+          Started exploring basic programming, learning HTML, CSS, and
+          JavaScript. Built my first simple website and became curious about how
+          technology works.
+        </p>
+      </li>
+      <li class="mb-10 ms-4">
+        <div
+          class="absolute w-3 h-3 bg-gray-300 dark:bg-gray-600 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900"
+        ></div>
+        <time class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400"
+          >October 2020</time
+        >
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+          Introduction to Python & Algorithms
+        </h3>
+        <p class="mb-4 text-base text-gray-600 dark:text-gray-400">
+          Began learning Python, solving algorithmic challenges, and
+          experimenting with small automation scripts.
+        </p>
+      </li>
+      <li class="mb-10 ms-4">
+        <div
+          class="absolute w-3 h-3 bg-gray-300 dark:bg-gray-600 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900"
+        ></div>
+        <time class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400"
+          >January 2021</time
+        >
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+          Diving into Web Development
+        </h3>
+        <p class="text-base text-gray-600 dark:text-gray-400">
+          Explored React.js and responsive design. Started developing
+          interactive web pages and learned about modern UI frameworks.
+        </p>
+      </li>
+      <li class="mb-10 ms-4">
+        <div
+          class="absolute w-3 h-3 bg-gray-300 dark:bg-gray-600 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900"
+        ></div>
+        <time class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400"
+          >August 2021</time
+        >
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+          Building My First Full-Stack Project
+        </h3>
+        <p class="text-base text-gray-600 dark:text-gray-400">
+          Developed a full-stack application using Node.js, Express, and
+          MongoDB, integrating authentication and REST APIs.
+        </p>
+      </li>
+      <li class="mb-10 ms-4">
+        <div
+          class="absolute w-3 h-3 bg-gray-300 dark:bg-gray-600 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900"
+        ></div>
+        <time class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400"
+          >November 2022</time
+        >
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+          Exploring Mobile Game Development
+        </h3>
+        <p class="text-base text-gray-600 dark:text-gray-400">
+          Started developing 3D games with Unity & C#, working with a team on
+          mobile game mechanics and graphics.
+        </p>
+      </li>
+      <li class="mb-10 ms-4">
+        <div
+          class="absolute w-3 h-3 bg-gray-300 dark:bg-gray-600 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900"
+        ></div>
+        <time class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400"
+          >November 2023</time
+        >
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+          Completion of Baccalaureate Exam
+        </h3>
+        <p class="text-base text-gray-600 dark:text-gray-400">
+          Successfully finished my Baccalaureate exam, marking an important
+          milestone in my academic journey.
+        </p>
+      </li>
+      <li class="mb-10 ms-4">
+        <div
+          class="absolute w-3 h-3 bg-gray-300 dark:bg-gray-600 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900"
+        ></div>
+        <time class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400"
+          >May 2024</time
+        >
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+          Exploring Flutter & Dart
+        </h3>
+        <p class="text-base text-gray-600 dark:text-gray-400">
+          Began learning Flutter and Dart for cross-platform mobile development,
+          experimenting with UI components.
+        </p>
+      </li>
+    </ol>
+    <!-- My Desired Things -->
+    <header class="flex flex-col items-center justify-center h-48 fade-in">
+      <h2 class="text-sm uppercase tracking-widest text-gray-500">
+        FAVOURITES
+      </h2>
+      <h1 class="text-2xl font-bold mt-2">Let's Get to Know Each Other</h1>
+    </header>
+
+    <main class="fade-in">
+      <section
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto mt-8 px-4"
+      >
+        <article class="bg-white p-6 rounded-lg shadow-md">
+          <div class="text-gray-500 font-semibold text-lg">01</div>
+          <h3 class="text-xs uppercase tracking-wide mt-2 text-gray-500">
+            FOOTBALL TEAM
+          </h3>
+          <p class="text-lg font-bold mt-1">Manchester United</p>
+        </article>
+        <article class="bg-white p-6 rounded-lg shadow-md">
+          <div class="text-gray-500 font-semibold text-lg">02</div>
+          <h3 class="text-xs uppercase tracking-wide mt-2 text-gray-500">
+            FAVOURITE MOVIE
+          </h3>
+          <p class="text-lg font-bold mt-1">Squid Game</p>
+        </article>
+        <article class="bg-white p-6 rounded-lg shadow-md">
+          <div class="text-gray-500 font-semibold text-lg">03</div>
+          <h3 class="text-xs uppercase tracking-wide mt-2 text-gray-500">
+            FAVOURITE SONG
+          </h3>
+          <p class="text-lg font-bold mt-1">Queen ~ Under Pressure</p>
+        </article>
+        <article class="bg-white p-6 rounded-lg shadow-md">
+          <div class="text-gray-500 font-semibold text-lg">04</div>
+          <h3 class="text-xs uppercase tracking-wide mt-2 text-gray-500">
+            OPERATING SYSTEM
+          </h3>
+          <p class="text-lg font-bold mt-1">MacOS</p>
+        </article>
+        <article class="bg-white p-6 rounded-lg shadow-md">
+          <div class="text-gray-500 font-semibold text-lg">05</div>
+          <h3 class="text-xs uppercase tracking-wide mt-2 text-gray-500">
+            CODE EDITOR
+          </h3>
+          <p class="text-lg font-bold mt-1">Visual Studio Code</p>
+        </article>
+        <article class="bg-white p-6 rounded-lg shadow-md">
+          <div class="text-gray-500 font-semibold text-lg">06</div>
+          <h3 class="text-xs uppercase tracking-wide mt-2 text-gray-500">
+            BROWSER
+          </h3>
+          <p class="text-lg font-bold mt-1">Chrome</p>
+        </article>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll(".fade-in");
+        elements.forEach((el, index) => {
+          setTimeout(() => {
+            el.style.opacity = "1";
+            el.style.transform = "translateY(0)";
+          }, index * 200);
+        });
+      });
+    </script>
+  </body>
+</html>

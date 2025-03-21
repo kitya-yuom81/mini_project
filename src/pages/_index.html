@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frelance Software Developer</title>
+    <link rel="icon" href="../images/title1.ico" type="images/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <style>
+      @keyframes wave {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(20deg);
+        }
+        50% {
+          transform: rotate(0deg);
+        }
+        75% {
+          transform: rotate(-20deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+      .animate-waving-hand {
+        display: inline-block;
+        animation: wave 1.5s infinite;
+        transform-origin: 70% 70%;
+      }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar will be loaded here -->
+    <div id="navbar" class="fade-in"></div>
+
+    <!-- JavaScript to load the navbar -->
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+    <div
+      class="w-full p-6 bg-white border border-gray-100 rounded-none shadow-sm mt-0 fade-in"
+    >
+      <a href="#">
+        <h5
+          class="mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white"
+        >
+          Freelance IT worker
+        </h5>
+      </a>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+        I am a student at the American University of Phnom Penh, pursuing a
+        degree in software development. Alongside my studies, I work as a
+        freelance IT professional specializing in web and app development. I am
+        passionate about creating innovative digital solutions and continuously
+        expanding my skills in the tech industry.
+      </p>
+      <a
+        href="3-work.html"
+        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+      >
+        Explore more
+        <svg
+          class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 14 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 5h12m0 0L9 1m4 4L9 9"
+          />
+        </svg>
+      </a>
+    </div>
+    <section class="hero bg-base-200 min-h-screen fade-in">
+      <div class="hero-content flex-col lg:flex-row">
+        <figure class="fade-in">
+          <img
+            src="https://i.pinimg.com/originals/75/95/2d/75952ddbecd4743baf83236395b20541.gif"
+            class="max-w-sm rounded-lg shadow-2xl"
+            alt="Box Office News Image"
+          />
+        </figure>
+        <article class="fade-in">
+          <header>
+            <p class="text-2xl font-semibold">
+              HEY, I'M TYA <span class="animate-waving-hand"> 👋 </span>
+            </p>
+            <h1 class="text-4xl font-bold">
+              My Love For Technology <span class="animate-waving-hand">🧑‍💻</span>
+            </h1>
+          </header>
+
+          <p class="py-6">
+            From a very young age, I was fascinated by technology, constantly
+            exploring how things worked and experimenting with computers,
+            coding, and digital tools. This early passion sparked my interest in
+            software development and set me on the path to pursuing a career in
+            IT.
+          </p>
+          <footer class="fade-in">
+            <a href="2-about.html">
+              <button
+                type="button"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              >
+                <span>Get to Know</span>
+                <span>→</span>
+              </button>
+            </a>
+          </footer>
+        </article>
+      </div>
+    </section>
+    <main class="w-full max-w-3xl mx-auto bg-white p-8 shadow-lg rounded-lg">
+      <header class="text-center fade-in">
+        <h2 class="text-4xl font-bold mb-6">Frequently Asked Questions</h2>
+      </header>
+
+      <section>
+        <article class="border-b border-gray-300 py-4 fade-in">
+          <details class="group">
+            <summary class="font-semibold cursor-pointer flex items-center">
+              <span class="mr-2">▶</span> How do you manage project deadlines
+              and timelines?
+            </summary>
+            <p class="text-sm text-gray-700 mt-2 pl-6">
+              I use tools like Trello or Notion to set clear milestones and
+              maintain regular updates with clients to ensure smooth delivery on
+              time.
+            </p>
+          </details>
+        </article>
+
+        <article class="border-b border-gray-300 py-4 fade-in">
+          <details class="group">
+            <summary class="font-semibold cursor-pointer flex items-center">
+              <span class="mr-2">▶</span> What technologies or programming
+              languages do you use?
+            </summary>
+            <p class="text-sm text-gray-700 mt-2 pl-6">
+              I work with HTML, CSS, JavaScript, PHP, Python, Dart (Flutter),
+              and various frameworks like React, Laravel, and Node.js, depending
+              on the project.
+            </p>
+          </details>
+        </article>
+
+        <article class="border-b border-gray-300 py-4 fade-in">
+          <details class="group">
+            <summary class="font-semibold cursor-pointer flex items-center">
+              <span class="mr-2">▶</span> What is your typical workflow for a
+              new project?
+            </summary>
+            <p class="text-sm text-gray-700 mt-2 pl-6">
+              I start with gathering requirements, followed by planning,
+              designing, development, testing, and finally deployment and
+              support.
+            </p>
+          </details>
+        </article>
+        <article class="border-b border-gray-300 py-4 fade-in">
+          <details class="group">
+            <summary class="font-semibold cursor-pointer flex items-center">
+              <span class="mr-2">▶</span> Can you work with an existing codebase
+              or website?
+            </summary>
+            <p class="text-sm text-gray-700 mt-2 pl-6">
+              Yes, I can analyze, debug, and enhance existing systems or
+              integrate new features into them.
+            </p>
+          </details>
+        </article>
+        <article class="border-b border-gray-300 py-4 fade-in">
+          <details class="group">
+            <summary class="font-semibold cursor-pointer flex items-center">
+              <span class="mr-2">▶</span> What are your rates and how do you
+              charge for projects?
+            </summary>
+            <p class="text-sm text-gray-700 mt-2 pl-6">
+              I offer flexible pricing models—hourly, fixed-rate, or
+              retainer-based—depending on the project scope and client needs.
+            </p>
+          </details>
+        </article>
+        <article class="border-b border-gray-300 py-4 fade-in">
+          <details class="group">
+            <summary class="font-semibold cursor-pointer flex items-center">
+              <span class="mr-2">▶</span> Do you provide post-project support or
+              maintenance?
+            </summary>
+            <p class="text-sm text-gray-700 mt-2 pl-6">
+              Yes, I offer ongoing maintenance and support services to ensure
+              your systems stay updated, secure, and bug-free.
+            </p>
+          </details>
+        </article>
+      </section>
+    </main>
+
+    <!-- Place the script just before closing body tag -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll(".fade-in");
+        elements.forEach((el, index) => {
+          setTimeout(() => {
+            el.style.opacity = "1";
+            el.style.transform = "translateY(0)";
+          }, index * 200); // Delay each element by 200ms
+        });
+      });
+    </script>
+    <div id="footer-placeholder"></div>
+
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="icon" href="../images/title1.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+  <style>
+    @keyframes wave {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(20deg); }
+      50% { transform: rotate(0deg); }
+      75% { transform: rotate(-20deg); }
+      100% { transform: rotate(0deg); }
+    }
+    .animate-waving-hand {
+      display: inline-block;
+      animation: wave 1.5s infinite;
+      transform-origin: 70% 70%;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Navbar -->
+  <div id="navbar" class="fade-in"></div>
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <!-- Main Container -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-16">
+
+    <!-- Contact Header -->
+    <section class="fade-in text-center">
+      <h1 class="text-3xl sm:text-4xl font-bold">Contact</h1>
+      <p class="text-gray-600 mt-2 text-sm sm:text-base max-w-2xl mx-auto">
+        I'm currently available to take on new projects. Please use the method below to get in touch, or use the form below.
+      </p>
+    </section>
+
+    <!-- Email Card -->
+    <section class="fade-in flex justify-center">
+      <a href="mailto:kityayuom@gmail.com"
+         class="w-full sm:w-2/3 md:w-1/2 block p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition text-center">
+        <span class="text-gray-500 font-semibold text-lg">Email</span>
+        <h2 class="mt-2 text-xl font-bold break-words">kityayuom@gmail.com</h2>
+      </a>
+    </section>
+
+    <!-- Project Details Form -->
+    <section class="fade-in bg-white shadow-md rounded-lg p-6">
+      <header class="mb-6">
+        <h2 class="text-2xl font-bold">Project Details</h2>
+      </header>
+      <form class="space-y-6">
+        <div>
+          <label for="business-type" class="block text-sm font-semibold text-gray-700 mb-2">
+            What type of business are you?
+          </label>
+          <select id="business-type" name="business-type"
+                  class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-blue-300">
+            <option disabled selected>Please choose...</option>
+            <option>Startup</option>
+            <option>Small Business</option>
+            <option>Enterprise</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="budget" class="block text-sm font-semibold text-gray-700 mb-2">
+            What budget have you got to work with?
+          </label>
+          <select id="budget" name="budget"
+                  class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-blue-300">
+            <option disabled selected>Please choose...</option>
+            <option>Less than $1,000</option>
+            <option>$1,000 - $10,000</option>
+            <option>More than $10,000</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="userInput" class="block text-sm font-semibold text-gray-700 mb-2">
+            How can we help you?
+          </label>
+          <input type="text" id="userInput" name="userInput" placeholder="Your information..."
+                 class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-blue-300">
+        </div>
+
+        <div>
+          <label for="schedule" class="block text-sm font-semibold text-gray-700 mb-2">
+            When are you looking to complete the project by?
+          </label>
+          <input type="date" id="schedule" name="schedule"
+                 class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-blue-300">
+        </div>
+      </form>
+    </section>
+
+    <!-- Your Details Form -->
+    <section class="fade-in bg-white shadow-md rounded-lg p-6">
+      <header class="mb-6">
+        <h2 class="text-2xl font-bold">Your Details</h2>
+      </header>
+      <form class="space-y-6" action="5-thank-you.html" method="get">
+        <div>
+          <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+            Name <span class="text-red-500">*</span>
+          </label>
+          <input type="text" id="name" name="name" required placeholder="Your name"
+                 class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-blue-300">
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+            Email <span class="text-red-500">*</span>
+          </label>
+          <input type="email" id="email" name="email" required placeholder="Your email"
+                 class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-blue-300">
+        </div>
+
+        <div>
+          <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
+            Phone Number <span class="text-red-500">*</span>
+          </label>
+          <input type="tel" id="phone" name="phone" required placeholder="Your phone number"
+                 class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-blue-300">
+        </div>
+
+        <div class="flex justify-end">
+          <button type="submit"
+                  class="bg-blue-700 hover:bg-blue-800 text-white font-medium rounded-lg text-sm px-6 py-2.5 focus:outline-none focus:ring-4 focus:ring-blue-300">
+            Send →
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Fade-in -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.fade-in').forEach(el => {
+        void el.offsetWidth;
+        el.style.opacity = 1;
+        el.style.transform = 'translateY(0)';
+      });
+    });
+  </script>
+
+  <!-- Footer -->
+  <div id="footer-placeholder" class="mt-16"></div>
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+</body>
+</html>
